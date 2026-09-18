@@ -153,6 +153,11 @@ programa {
     1. Pagamento via PIX (10% de desconto)")
     escreva("
     2. Cartão de Credito (Valor normal)")
+     ")
+      valor_desconto=0.0
+      valor_Final=Valor_total_bruto
+      pare
+      }
 
                   escreva("
   Escolha a forma de pagamento: ")
@@ -169,8 +174,22 @@ programa {
                    caso contratio:
                       escreva("
   opção inválida! Processando valor normal.
-
-
+   ")
+      valor_desconto=0.0
+      valor_Final=Valor_total_bruto
+      pare
+      }
+      // 3. NOTA FISCAL DETALHADA
+      limpa()
+     escreva("==================================")
+     escreva("NOTA FISCAL - LOJA VIRTUAL")
+     escreva("==================================")
+     escreva("itens comprados: ")
+     se (qtd_carrinho_prod1 > 0) {
+       escreva("- "),qtd_carrinho_prod1, "x Camisa Esportiva = R$ "qtd_carrinho_p
+   }
+     Quantidade inválida ou acima do estoque disponível!
+  ")
 
   }
 }
