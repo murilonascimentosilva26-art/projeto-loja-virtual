@@ -34,22 +34,20 @@ programa {
 
         escreva("=== BEM-VINDO Á NOSSA LOJA VIRTUAL ===")
         escreva("-------MENU PRINCIPAL-------")
-        ")
-         escreva("1. Ver Produtos e Adicionar ao carrinho (CREATE)
-")       
-         escreva("2. Ver meus itens no Carrinho (READ)
-")
-         escreva("3. Alterar Quantidade no Carrinho (UPDATE)
-")
-         escreva("4. Remover Item do Carrinho (DELETE)
-")
-         escreva("0. Finalizar Compra e ir ao Pagamento
-")
-         escreva("Escolha uma opção: ")
+        escreva("1. Ver Produtos e Adicionar ao carrinho (CREATE)")       
+        escreva("2. Ver meus itens no Carrinho (READ)")
+        escreva("3. Alterar Quantidade no Carrinho (UPDATE)")
+        escreva("4. Remover Item do Carrinho (DELETE)")
+        escreva("0. Finalizar Compra e ir ao Pagamento")
+        escreva("Escolha uma opção: ")
          leia(opcao_menu_principal)
 
          escolha (opcao_menu_principal)
-         {
+         escreva("
+  Escolha a forma de pagamento: ")
+                leia(opcao_pagamento)
+              {
+
               // =============================================
               // C - CREATE (Adicionar Itens ao Carrinho)
               // =============================================
@@ -136,6 +134,42 @@ programa {
 			           limpa()
 			            escreva("Opção inválida! Escolha uma das opções do menu.")
                   escreva("Pressione ENTER para continuar...")
+                   Leia(tecla_puasa)
+    pare
+
+    }
+  }
+  // CALCULAR VALOR TOTAL DO CARRINHO
+  valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) +
+                      (qtd_carrinho_prod2 * preco_prod2) +
+                      (qtd_carrinho_prod3 * preco_prod3) +
+
+  // 2. ETAPA DE PAGAMENTO
+  limpa ( )
+  se (valor_total_bruto > 0)
+  {
+    escreva("--- FORMA DE PAGAMENTO---")
+    escreva("
+    1. Pagamento via PIX (10% de desconto)")
+    escreva("
+    2. Cartão de Credito (Valor normal)")
+
+                  escreva("
+  Escolha a forma de pagamento: ")
+                leia(opcao_pagamento)
+                {
+                   caso 1:
+                      valor_desconto = valor_total_bruto * 0.10
+                      valor_final = 0.0
+                      pare
+                   caso 2:
+                      valor_desconto = 0.0
+                      valor_final = valor_total_bruto
+                      pare
+                   caso contratio:
+                      escreva("
+  opção inválida! Processando valor normal.
+
 
 
   }
