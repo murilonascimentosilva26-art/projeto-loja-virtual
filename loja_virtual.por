@@ -87,9 +87,9 @@ programa {
                                     leia(tecla_pausa)   
                                     pare
 
-                          // ====================================================== 
-                          // U - UPDATE ( ATUALIZAR QUANTIDADE NO CARRINHO )
-                          // ====================================================== 
+                       // ====================================================== 
+                       // U - UPDATE ( ATUALIZAR QUANTIDADE NO CARRINHO )
+                       // ====================================================== 
                   caso 3: 
                     limpa()
                     escreva("--- ALTERAR QUANTIDADE NO CARRINHO ---")
@@ -115,7 +115,18 @@ programa {
 	                  escreva("Pressione ENTER para voltar ao menu...")
 	                  leia(tecla_pausa)
 	                  pare
+               limpa()
+    escreva("--- REMOVER ITEM DO CARRINHO ---")
 
+    escreva("1. Camisa esportiva (no carrinho ", qtd_carrinho_prod1 ,)")
+
+    escreva("2. Bone casual  (no carrinho ", qtd_carrinho_prod2 ,)")
+
+    escreva("3. Tenis de corrida (no carrinho ", qtd_carrinho_prod3 ,)")
+  
+  }
+
+  }
                 // ===============================================
                 // D - DELETE (Remover Item do Carrinho)
                 // ===============================================
@@ -190,6 +201,24 @@ programa {
    }
      Quantidade inválida ou acima do estoque disponível!
   ")
+                             }
+                        }
+                        senao se (opcao_crud)
+                       {
+                           estoque_prod3 = estoque_prod3 +qtd_carrinho_prod3
+                           escreva(Digite a NOVA quantidade total para este item:")
+                           leia(quantidade_temp) 
+                            
+                            se(quantidade_temp >= 0 e quantidade_temp <= estoque_prod3)
+                             qtd_carrinho_prod3 = quantidade_temp
+                             estoque_prod3 = estoque_prod3 - quantidade_temp
+                             escreva("
+Quantidade atualizada com sucesso !")
 
+                           } senao {
+                               estoque_prod3 = estoque_prod3 - qtd_carrinho_prod3
+                               escreva("
+                           }
+                       }
   }
 }
