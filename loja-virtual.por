@@ -1,6 +1,5 @@
 programa {
   funcao inicio() {
-    
     inteiro opcao_menu_principal = -1
     inteiro opcao_crud = -1
     inteiro quantidade_temp = 0
@@ -185,8 +184,60 @@ senao
 escreva("\n\nPressione ENTER para voltar ao menu...")
 leia(tecla_pausa)
 pare
+
+    ("Quantidade inválida ou acima do estoque disponível!
+")
+    }
+  }
+	              senao {
+		                escreva("Opção inválida!")
+    }
+
+	           escreva("Pressione ENTER para voltar ao menu...")
+	           leia(tecla_pausa)
+	          pare
+
+            // ===============================================
+            // D - DELETE (Remover Item do Carrinho)
+            // ===============================================
+            caso 4:
+
+  limpa()
+    escreva("--- REMOVER ITEM DO CARRINHO ---")
+
+    escreva("1. Camisa esportiva (no carrinho ", qtd_carrinho_prod1 ,)")
+
+    escreva("2. Bone casual  (no carrinho ", qtd_carrinho_prod2 ,)")
+
+    escreva("3. Tenis de corrida (no carrinho ", qtd_carrinho_prod3 ,)")
+  
+  }
+
+  }
+
+    escreva("Pressione ENTER para voltar ao menu...")
+			              leia(tecla_pausa)
+			              pare
+
+		            caso 0:
+			              limpa()
+			              escreva("Encerrando seleção de itens e indo para o pagamento...")
+			             pare
+
+		caso contrario:
+			limpa()
+			escreva("Opção inválida! Escolha uma das opções do menu.")
+
+			escreva("Pressione ENTER para continuar...")
+
+
+
+
 }
 }
 }
 }
 
+
+  }
+}
