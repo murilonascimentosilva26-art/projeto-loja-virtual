@@ -143,7 +143,7 @@ programa {
           escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, "\n")
           escreva("Escolha o item para alterar a quantidade: \n")
           leia(opcao_crud)
-      }
+       }
 
           se (opcao_crud == 1)
           {
@@ -261,14 +261,14 @@ programa {
     
 
 
-    // CALCULAR VALOR TOTAL DO CARRINHO
-    valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) + (qtd_carrinho_prod2 * preco_prod2) + (qtd_carrinho_prod3 * preco_prod3)
+     // CALCULAR VALOR TOTAL DO CARRINHO
+      valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) + (qtd_carrinho_prod2 * preco_prod2) + (qtd_carrinho_prod3 * preco_prod3)
 
 
-    // 2. ETAPA DE PAGAMENTO
-    limpa()
-    se (valor_total_bruto > 0)
-    {
+      // 2. ETAPA DE PAGAMENTO
+      limpa()
+      se (valor_total_bruto > 0)
+      {
         escreva("--- FORMA DE PAGAMENTO ---\n")
 
         escreva("1. Pagamento via PIX (10% de desconto)\n")
@@ -334,11 +334,11 @@ programa {
 
       escreva("=========================================\n")
 
-      escreva("Obrigado por comprar conosco!\n")
-    }
-    senao
-    {
-      escreva("Carrinho vazio. Compra cancelada.\n")
-    }
+       escreva("Obrigado por comprar conosco!\n")
+     }
+      senao
+      {
+       escreva("Carrinho vazio. Compra cancelada.\n")
+      }
   }
 }
