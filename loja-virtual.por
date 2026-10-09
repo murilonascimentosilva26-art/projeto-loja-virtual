@@ -195,7 +195,7 @@ programa {
             }
           }
           senao se (opcao_crud == 3)
-          {
+
             estoque_prod3 = estoque_prod3 + qtd_carrinho_prod3
             escreva("Digite a NOVA quantidade total para este item: \n")
             leia(quantidade_temp)
