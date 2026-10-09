@@ -143,7 +143,7 @@ programa {
           escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, "\n")
           escreva("Escolha o item para alterar a quantidade: \n")
           leia(opcao_crud)
-
+      }
 
           se (opcao_crud == 1)
           {
@@ -257,8 +257,8 @@ programa {
           escreva("Pressione ENTER para continuar...\n")
           leia(tecla_pausa)
           pare
-      }
-    }
+      
+    
 
 
     // CALCULAR VALOR TOTAL DO CARRINHO
